@@ -4,8 +4,10 @@
 
 (function(){
 
+	// the minimum version of jQuery we want
 	var v = "1.3.2";
 
+	// check prior inclusion and version
 	if (window.jQuery === undefined || window.jQuery.fn.jquery < v) {
 		var done = false;
 		var script = document.createElement("script");
@@ -23,20 +25,7 @@
 	
 	function initMyBookmarklet() {
 		(window.myBookmarklet = function() {
-			function getSelText() {
-				var s = '';
-				if (window.getSelection) {
-					s = window.getSelection();
-				} else if (document.getSelection) {
-					s = document.getSelection();
-				} else if (document.selection) {
-					s = document.selection.createRange().text;
-				}
-				return s;
-			}
-			
-      // your code here
-      
+			// your JavaScript code goes here!
 		})();
 	}
 
