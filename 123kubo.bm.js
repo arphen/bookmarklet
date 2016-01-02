@@ -20,9 +20,8 @@
 	}
 	
 	function initMyBookmarklet() {
-		(window.myBookmarklet = function() {
-			// your JavaScript code goes here!
-		})();
+		$("iframe, div.header, div.menu, div.top, div.datal, div.playl, div.playr, #custom1, #stad, div.footer, div.FF tr:nth-child(1), div.FF tr:nth-child(2), object ~ *").remove();
+		$("body").css("background-color", "black");
 	}
 
 })();
