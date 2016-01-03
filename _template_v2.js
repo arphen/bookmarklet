@@ -16,8 +16,9 @@
     }
 
     // check prior inclusion and version
+    var v = "1.3.2";
     if (window.jQuery === undefined || window.jQuery.fn.jquery < v) {
-        getScript("http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js", initMyBookmarklet);
+        getScript("http://ajax.googleapis.com/ajax/libs/jquery/" + v + "/jquery.min.js", initMyBookmarklet);
     } else {
         initMyBookmarklet();
     }
