@@ -24,6 +24,7 @@
   function initMyBookmarklet () {
     (window.myBookmarklet = function () {
       // your JavaScript code goes here!
+      console.log('Hello Bookmarklet!')
     })()
   }
 })()
